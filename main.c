@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main(int argc, char *argv[]){
     char B[10];
@@ -8,7 +9,12 @@ int main(int argc, char *argv[]){
     while(1){
         printf("What's your name? ");
         gets(B);
-        printf("Name is %s\n", B);
+        if(strstr(B,"joker")){
+            printf("%s\n",s1);
+        }
+        else{
+            printf("%s\n",s2);
+        }
     }
     return 0;
 }
